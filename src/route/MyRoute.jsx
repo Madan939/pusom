@@ -4,7 +4,6 @@ import Holi from '../pages/Holi'
 import CyberSecurity from '../pages/CyberSecurity'
 import Graduation from '../pages/Graduation'
 import Gallery from '../pages/Gallery'
-import Contact from '../Pages/Contact'
 import AboutUs from '../pages/AboutUs'
 import News from '../Pages/News'
 import Download from '../pages/Download'
@@ -15,6 +14,7 @@ import MPHIL from '../Pages/MPHIL'
 import PHD from '../Pages/PHD'
 import ScrollToTop from '../components/ScrollToTop'
 import Home from '../Pages/Home'
+import Contact from '../Pages/Contact'
 
 const MyRoute = () => {
   return (
@@ -30,7 +30,7 @@ const MyRoute = () => {
         <Route path='/course/mba' element={<MBA />} />
         <Route path='/course/mphil' element={<MPHIL />} />
         <Route path='/course/phd' element={<PHD />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact/>} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/gallery/graduation-ceremony' element={<Graduation />} />
         <Route path='/gallery/holi' element={<Holi />} />
