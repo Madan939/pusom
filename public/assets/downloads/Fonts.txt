@@ -1,0 +1,10 @@
+Fonts used in this design;
+
+Font: Cooper Hewitt, 
+Author: Cooper Hewitt, 
+Url: http://www.fontsquirrel.com/fonts/cooper-hewitt; 
+
+Font: Gandhi Sans, 
+Author: Librerias Gandhi S.A. de C.V., 
+Url: http://www.fontsquirrel.com/fonts/gandhi-sans; 
+
