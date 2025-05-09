@@ -353,46 +353,42 @@ const Home = () => {
           >
             {[
               {
-                id: 1,
                 name: "Rajesh Sharma",
-                title: "MBA Graduate, 2021",
-                image: "/assets/images/homepage/director.svg",
-                quote:
+                des: "MBA Graduate, 2021",
+                img: "/assets/images/homepage/director.svg",
+                qte:
                   "The MBA program at PUSOM provided me with the knowledge and skills I needed to succeed in my career. The faculty is excellent and the curriculum is comprehensive.",
               },
               {
-                id: 2,
                 name: "Priyanka Singh",
-                title: "BBA Graduate, 2022",
-                image: "/assets/images/homepage/team1.svg",
-                quote:
+                des: "BBA Graduate, 2022",
+                img: "/assets/images/homepage/team1.svg",
+                qte:
                   "My experience at PUSOM was transformative. The hands-on learning approach and industry exposure prepared me well for the corporate world.",
               },
               {
-                id: 3,
                 name: "Anil Adhikari",
-                title: "M.Phil Graduate, 2020",
-                image: "/assets/images/homepage/director.svg",
-                quote:
+                des: "M.Phil Graduate, 2020",
+                img: "/assets/images/homepage/director.svg",
+                qte:
                   "The research opportunities and mentorship at PUSOM helped me develop critical thinking and analytical skills that are invaluable in my work as a consultant.",
               },
               {
-                id: 4,
                 name: "Neha Thapa",
-                title: "MBA Graduate, 2023",
-                image: "/assets/images/homepage/team1.svg",
-                quote:
+                des: "MBA Graduate, 2023",
+                img: "/assets/images/homepage/team1.svg",
+                qte:
                   "The network I built during my time at PUSOM has been instrumental in my career growth. The alumni connections and placement support are exceptional.",
               },
-            ].map((item) => (
-              <SwiperSlide key={item.id} className='border rounded-md mb-10 bg-[#ffff] px-5 py-4'>
+            ].map((item,idx) => (
+              <SwiperSlide key={idx+1} className='border rounded-md mb-10 bg-[#ffff] px-5 py-4'>
                 <img src="/assets/images/homepage/quotation-marks-svgrepo-com.svg" alt="left-quotations" className='h-8 mb-6' />
-                <p className='h-60'>{item.quote}</p>
+                <p className='h-60'>{item.qte}</p>
                 <div className='flex gap-5 items-center'>
-                  <img src={item.image} alt={item.name} className='h-16 w-16 border-2 border-[#EAB308] rounded-full object-cover' />
+                  <img src={item.img} alt={item.name} className='h-16 w-16 border-2 border-[#EAB308] rounded-full object-cover' />
                   <div>
                     <p className='text-semibold'>{item.name}</p>
-                    <p className='text-sm text-[#4b4b4b]'>{item.title}</p>
+                    <p className='text-sm text-[#4b4b4b]'>{item.des}</p>
                   </div>
                 </div>
               </SwiperSlide>

@@ -24,7 +24,7 @@ const AboutUs = () => {
                         <img src="/assets/images/about/mission.svg" alt="mission" className='w-full h-auto' />
                     </div>
                     <div className=' max-md:w-full  flex justify-center items-center '>
-                        <div className='text-white px-4'>
+                        <div className='text-white px-4 max-md:py-5'>
                             <p className='text-[30px] max-md:text-[20px] font-bold mb-4 text-center'>Our Mission</p>
                             <p className='text-[17px] '>To provide transformative management education that empowers future leaders with critical thinking, ethical values, and practical skills, while fostering innovation, entrepreneurship, and sustainable development in Nepal and beyond. Our mission is to cultivate a dynamic academic environment that nurtures lifelong learning, industry collaboration, and global competence</p>
                         </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
                         <img src="/assets/images/about/vision.svg" alt="vision" className='w-full h-auto' />
                     </div>
                     <div className='  flex justify-center items-center '>
-                        <div className='text-white px-4'>
+                        <div className='text-white px-4 max-md:py-5'>
                             <p className='text-[30px] max-md:text-[20px] font-bold mb-4 text-center'>Our Vision</p>
                             <p className='text-right text-[17px] max-md:text-left'>We are committed to fostering a learning environment that blends academic rigor with practical relevance, encouraging critical thinking, entrepreneurial spirit, and social responsibility. Our vision is to empower future professionals with the skills, values, and mindset needed to succeed in an ever-evolving global economy.</p>
                         </div>
@@ -86,7 +86,7 @@ const AboutUs = () => {
                         { image: "/assets/images/about/team7.svg", name: "Mr. Dev Raj Shrestha", date: "2054.09.15 to 2058.09.14" },
                     ].map((item, idx) => (
                         <div key={idx + 1} className='text-center'>
-                            <img src={item.image} alt={item.name} className='mb-2' />
+                            <img src={item.image} alt={item.name} className='mb-2 w-full' />
                             <p className='font-semibold text-[20px]'>{item.name}</p>
                             <p className='text-[#4b4b4b]'>{item.date}</p>
                         </div>

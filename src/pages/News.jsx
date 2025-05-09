@@ -41,7 +41,7 @@ const News = () => {
           </div>
         </div>
       </section>
-      <section className='container mb-[68px] mx-auto px-4  grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <section className='container mb-[68px] mx-auto px-4  grid grid-cols-1 md:grid-cols-2 max-md:space-y-5 lg:gap-6'>
         <div className=''>
           <img src="/assets/images/news/ph6.svg" alt="director" className='mb-4' />
           <p className='text-[24px] font-bold mb-4'>The Dean of PUSOM hosted an open forum with students to discuss academic concerns, internship support, and suggestions for better engagement. Students appreciated the transparent communication.</p>
@@ -67,10 +67,10 @@ const News = () => {
                 Graduation ceremonies and orientation programs</p>
             </div>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 place-items-center gap-3'>
+          <div className='grid grid-cols-1 md:grid-cols-2 place-items-center gap-3 '>
             <img src="/assets/images/news/ph9.svg" alt="logo" className='w-[85%] max-md:w-full'/>
             <div>
-              <p className='text-[20px] font-bold mb-2'>Events & Activities</p>
+              <p className='text-[20px] font-bold mb-2'>Achievements</p>
               <p className='text-[#4b4b4b] '>Student or faculty awards
                 Successful research or publications
                 Alumni accomplishments

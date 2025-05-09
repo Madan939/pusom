@@ -24,7 +24,7 @@ const PHD = () => {
                    
                 </div>
             </section>
-            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center gap-6'>
+            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center md:gap-6'>
                 <div className='col-span-3 max-md:mb-10'>
                     <p className='text-[30px] max-md:text-[20px] font-bold mb-6'>Introduction</p>
                     <p className='mb-6 text-[17px] text-[#4b4b4b]'>The Doctoral Program (Ph.D. Program) in Management of the Purbanchal University aims at developing high quality of research students in the field of management. The Ph.D. program will help in the advancement of knowledge responding to global, regional, national and local needs and enhancing quality of teaching and faculty development in the field of management through independent and original research. </p>

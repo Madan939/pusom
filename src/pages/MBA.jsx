@@ -23,7 +23,7 @@ const MBA = () => {
                     
                 </div>
             </section>
-            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center gap-6'>
+            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center md:gap-6'>
                 <div className='col-span-3 max-md:mb-10'>
                     <p className='text-[30px] max-md:text-[20px] font-bold mb-6'>Introduction</p>
                     <p className='mb-6 text-[17px] text-[#4b4b4b]'>The MBA program of Purbanchal University designed at 70 credit hours with 26 course components including internship project or thesis is a full-time program directed at preparing professional managers for the business and non-business sectors. The program’s focus is on developing managerial and entrepreneurial capabilities of students through the curricular and co-curricular activities.</p>

@@ -23,7 +23,7 @@ const BBA = () => {
                    
                 </div>
             </section>
-            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center gap-3'>
+            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center md:gap-3'>
                 <div className='col-span-3 max-md:mb-10'>
                     <p className='text-[30px] max-md:text-[20px] font-bold mb-6'>Introduction</p>
                     <p className='mb-6 text-[17px] text-[#4b4b4b]'>The BBA program specifically aims to provide adequate basic understanding about Management Education among the students, prepare students to exploit opportunities being newly created in the Management Profession, train the students in communication skills effectively, inculcate knowledge, skill, and attitude in students so that they become scientifically approached, result oriented, and socially responsive management professionals as well as inculcate entrepreneurial skills.</p>
@@ -33,7 +33,7 @@ const BBA = () => {
                     <p className=' text-[17px] text-[#4b4b4b]'>The candidate applying for BBA program must have successfully completed a twelve-year schooling or its equivalent from any University, board or institution recognized byPurbanchal University and secured at least 40 % in the 10+2, PCL or equivalent program. Similarly for MBA program, the candidate must have successfully completed Bachelor or equivalent program with at least 45% in addition to meeting other parameters of entrance as decided by Management Campus.</p>
 
                 </div>
-                <div className='bg-[#4678B226]  flex items-center h-full col-span-2 w-full max-md:py-6'>
+                <div className='bg-[#4678B226] flex items-center h-full col-span-2 w-full max-md:py-6'>
                     <div className='w-[85%] mx-auto'>
                     <p className='text-[30px] max-md:text-[20px] font-bold mb-6'>Why BBA In PUSOM?</p>
                     <p className='mb-6 text-[17px]'>Academic Excellence and Legacy</p>

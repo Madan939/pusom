@@ -22,7 +22,7 @@ const MPHIL = () => {
                     <img src="/assets/images/course/Group3.svg" alt="bba" className='w-full' />
                 </div>
             </section>
-            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center gap-6'>
+            <section className='container mb-[68px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 place-items-center md:gap-6'>
                 <div className='col-span-3 max-md:mb-10'>
                     <p className='text-[30px] max-md:text-[20px] font-bold mb-6'>Introduction</p>
                     <p className='mb-6 text-[17px] text-[#4b4b4b]'>The M. Phil program is a pre-requisite course to the Ph.D. program of the Faculty of Management, Purbanchal University. The program develops knowledge and skill among students necessary for pursuing research in different areas of management. </p>
