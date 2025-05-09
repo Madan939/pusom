@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,7 +10,28 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   useEffect(() => {
     document.title = "PUSOM | Purbanchal University School of Management";
+    animateNumber(setalu, 5000, 3000);
+    animateNumber(setef, 45, 3000);
+    animateNumber(setyoe, 25, 3000);
+    animateNumber(setip, 12, 3000);
   }, []);
+  const [alu, setalu] = useState(0);
+  const [ef, setef] = useState(0);
+  const [yoe, setyoe] = useState(0);
+  const [ip, setip] = useState(0);
+
+  const animateNumber = (setter, finalValue, duration) => {
+    let start = 0;
+    let increment = finalValue / (duration / 30);
+    let interval = setInterval(() => {
+      start += increment;
+      if (start >= finalValue) {
+        start = finalValue;
+        clearInterval(interval);
+      }
+      setter(Math.floor(start));
+    }, 20);
+  };
 
   return (
     <>
@@ -194,14 +215,14 @@ const Home = () => {
         <p className='text-[#092044] text-4xl font-bold text-center mb-6'>Our Achievements </p>
         <div className='grid grid-cols-2 gap-7 md:grid-cols-4 place-content-between'>
           {[
-            { name: "Alumini", img: "/assets/images/homepage/graduation-cap-svgrepo-com.svg", no: 5000 },
-            { name: "Expert Faculty", img: "/assets/images/homepage/university-lecture-svgrepo-com.svg", no: 45 },
-            { name: "Years of Excellence", img: "/assets/images/homepage/achievement-reward-award-svgrepo-com.svg", no: 25 },
-            { name: "Industry Partners", img: "/assets/images/homepage/building-2-svgrepo-com.svg", no: 12 },
+            { name: "Alumini", img: "/assets/images/homepage/graduation-cap-svgrepo-com.svg", no: `${alu}` },
+            { name: "Expert Faculty", img: "/assets/images/homepage/university-lecture-svgrepo-com.svg", no: `${ef}` },
+            { name: "Years of Excellence", img: "/assets/images/homepage/achievement-reward-award-svgrepo-com.svg", no: `${yoe}` },
+            { name: "Industry Partners", img: "/assets/images/homepage/building-2-svgrepo-com.svg", no: `${ip}` },
           ].map((item, idx) => (
-            <div key={idx + 1} className='shadow-lg text-center py-3'>
+            <div key={idx + 1} className='shadow-lg text-center py-3 hover:shadow-2xl'>
               <img src={item.img} alt={idx + 1} className='mb-2 h-12 mx-auto' />
-              <p className='text-2xl font-bold text-[#092044] mb-2'>{item.no}</p>
+              <p className='text-3xl font-bold text-[#092044] mb-2'>{item.no}</p>
               <p className='text=[4b4b4b]'>{item.name}</p>
             </div>
           ))}
@@ -432,7 +453,7 @@ const Home = () => {
                   <option value="phd">Phd</option>
                 </select>
               </section>
-              <button type='submit' className='w-full py-3 font-bold text-white rounded-md bg-[#092044] hover:bg-[#132a4d] flex gap-2 items-center justify-center'>Submit Application <img src="/assets/images/homepage/right-arrow-svgrepo-com.svg" alt="right-arrow" className='h-5'/></button>
+              <button type='submit' className='w-full py-3 font-bold text-white rounded-md bg-[#092044] hover:bg-[#132a4d] flex gap-2 items-center justify-center'>Submit Application <img src="/assets/images/homepage/right-arrow-svgrepo-com.svg" alt="right-arrow" className='h-5' /></button>
             </form>
           </div>
         </section>
