@@ -4,3 +4,29 @@
 *{
     font-family: "Inter", sans-serif;
 }
+.swiper-1 .swiper-pagination-bullet {
+    width: 30px !important;
+    height: 2.5px !important;
+    background-color: #ffffff !important;
+    border-radius: 0 !important;
+    opacity: 1 !important;
+  }
+  .swiper-3 .swiper-pagination-bullet {
+    background-color: #ffffff !important;
+  }
+  .swiper-1 .swiper-pagination-bullet-active, .swiper-2 .swiper-pagination-bullet-active,.swiper-3 .swiper-pagination-bullet-active {
+    background-color: #EAB308 !important;
+  }
+  
+  .swiper-1 .swiper-button-next,
+  .swiper-1 .swiper-button-prev {
+    color: #EAB308 !important;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .swiper-1 .swiper-button-next,
+    .swiper-1 .swiper-button-prev {
+      display: none !important;
+    }
+  }
+  

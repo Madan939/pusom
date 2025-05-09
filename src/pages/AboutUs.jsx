@@ -75,7 +75,7 @@ const AboutUs = () => {
             </section>
             <section className='mb-[68px] container px-4 mx-auto'>
                 <p className='text-[30px] max-md:text-[20px] font-bold mb-8 text-center'>Team of PUSOM</p>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 place-content-between'>
                     {[
                         { image: "/assets/images/about/team1.svg", name: "Ms. Sonila Shakya", date: "2076.05.18 to 2077.09.20" },
                         { image: "/assets/images/about/team2.svg", name: "Prof. Dr. Biju Kr. Thapalia", date: "2075.05.10 to 2076-05.01" },
